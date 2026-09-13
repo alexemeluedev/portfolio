@@ -198,7 +198,9 @@ function App() {
                   key={project.number}
                   onClick={() => setActiveProject(project)}
                   aria-label={`Show ${project.name} case study`}
-                  aria-current={project.number === activeProject.number ? "true" : undefined}
+                  aria-current={
+                    project.number === activeProject.number ? "true" : undefined
+                  }
                   type="button"
                 >
                   <img src={project.image} alt="" />
